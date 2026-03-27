@@ -170,7 +170,7 @@ const PortalHero: React.FC<PortalHeroProps> = ({ onEnter }) => {
                 <div className="flex flex-col items-center justify-center border-l md:border-l-0 border-slate-300 border-dashed pl-4 md:pl-0">
                   <div className="w-[80px] h-[80px] md:w-full md:aspect-video md:h-auto rounded-lg md:rounded-xl overflow-hidden shadow-sm md:shadow-md z-10 bg-slate-200 flex items-center justify-center md:mt-auto border-2 md:border-4 border-white shrink-0">
                     <img 
-                      src="/images/hero.jpg" 
+                      src={`${import.meta.env.BASE_URL}images/hero.jpg`}
                       alt="Passenger" 
                       className="w-full h-full object-cover"
                       onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.innerHTML = '<span class="text-[0.55rem] md:text-[0.65rem] text-slate-400 font-mono text-center px-1 md:px-4 uppercase tracking-widest md:tracking-[0.2em]">Add photo</span>'; }}
